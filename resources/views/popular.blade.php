@@ -12,7 +12,7 @@
                     <p>{{ $a->created_at->format('Y-m-d') }} | by: {{ $a->writer->writerName }}</p>
                     <p>{{ Str::limit($a->content, 100, '...') }}</p>
                     <div class="text-end">
-                        <a href={{ route('articleDetailPage', $a->id) }} class="btn btn-primary">Read More...</a>
+                        <a href={{ route('detailPage', $a->id) }} class="btn btn-primary">Read More...</a>
                     </div>
                 </div>
             </div>
